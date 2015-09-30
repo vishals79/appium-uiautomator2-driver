@@ -9,7 +9,7 @@ dependencies {
     compile project(':selendroid-common')
     compile project(':selendroid-server-common')
     compile project(':selendroid-server')
-    compile project('android-driver-app')
+    compile project(':android-driver-app')
     compile 'org.apache.httpcomponents:httpclient:4.3.4'
     compile 'org.json:json:20090211'
     compile 'commons-io:commons-io:2.2'
@@ -23,9 +23,9 @@ dependencies {
         exclude(module : 'selenium-htmlunit-driver')
     }
 
-    testcompile 'junit:junit:4.11'
-    testcompile 'org.mockito:mockito-core:1.9.5'
-    testcompile 'org.hamcrest:hamcrest-all:1.3'
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.mockito:mockito-core:1.9.5'
+    testCompile 'org.hamcrest:hamcrest-all:1.3'
 }
 
 //application properties

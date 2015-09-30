@@ -18,6 +18,10 @@ android {
         targetSdkVersion 16
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'

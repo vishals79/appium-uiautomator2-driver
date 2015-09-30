@@ -7,10 +7,6 @@ buildscript {
     }
 }
 
-repositories {
-    jcenter()
-}
-
 apply plugin: 'android'
 
 android {
@@ -28,15 +24,4 @@ android {
             res.srcDirs = ['res']
         }
     }
-}
-
-
-dependencies {
-    compile project(':selendroid-server-common')
-    compile 'org.json:json:20090211'
-
-    compile files('../third-party/cordova-3.7.0/classes.jar')
-    compile files('../third-party/cordova-4.0.0/classes.jar')
-    compile files('../third-party/support-v4/classes.jar')
-
 }

@@ -7,10 +7,6 @@ buildscript {
     }
 }
 
-repositories {
-    jcenter()
-}
-
 apply plugin: 'android'
 
 version  = "0.17.0-SNAPSHOT"

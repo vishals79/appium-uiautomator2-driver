@@ -13,6 +13,8 @@ repositories {
 
 apply plugin: 'android'
 
+version  = "0.17.0-SNAPSHOT"
+
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"

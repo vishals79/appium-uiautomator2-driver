@@ -1,3 +1,5 @@
+version='0.17.0-SNAPSHOT'
+
 buildscript {
     repositories {
         jcenter()
@@ -5,11 +7,6 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:1.0.1'
     }
-}
-
-
-repositories {
-    jcenter()
 }
 
 apply plugin: 'java'
@@ -41,8 +38,15 @@ dependencies {
 mainClassName = "io.selendroid.standalone.SelendroidLauncher"
 
 jar {
+    into('prebuild') {
+        from {
+            ["../selendroid-server/build/outputs/apk/selendroid-server-release-unsigned.apk",
+             "../android-driver/build/outputs/apk/android-driver-app-release-unsigned.apk"]
+        }
+    }
     from{
-        ["../selendroid-server/build/outputs/apk/selendroid-server-release-unsigned.apk","../android-driver/build/outputs/apk/android-driver-app-release-unsigned.apk"]
+        ["./AndroidManifestTemplate.xml",
+        "../README.md"]
     }
 }
 

@@ -18,3 +18,7 @@ selendroid.ipr
 selendroid.iws
 .idea/
 *.iml
+
+gradle/
+gradlew
+gradlew.bat

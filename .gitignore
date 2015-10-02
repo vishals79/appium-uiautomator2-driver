@@ -22,3 +22,5 @@ selendroid.iws
 gradle/
 gradlew
 gradlew.bat
+
+build/
